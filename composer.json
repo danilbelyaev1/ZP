@@ -1,0 +1,24 @@
+{
+	"name": "rpn/healthy-nutrition",
+	"type": "project",
+	"authors": [
+		{
+			"name": "Sidorenko Dmitriy",
+			"email": "dmitry.sidorenko@dalee.ru"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"App\\": "app/"
+		}
+	},
+	"require": {
+		"php": "^7.1",
+		"symfony/dom-crawler": "^5.4",
+		"symfony/css-selector": "^5.4",
+		"ext-dom": "*"
+	},
+	"require-dev": {
+		"symfony/var-dumper": "^5.2"
+	}
+}

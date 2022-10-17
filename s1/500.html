@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link  rel="icon" href="/layout/img/favicon/favicon.ico" type="image/x-icon">
+	<script src="https://yastatic.net/share2/share.js" defer></script>
+	<title>500</title>
+	<style>
+		@font-face {
+			font-family: 'GolosTextWebRegular';
+			src: url('layout/fonts/Golos-Text_Regular.woff2') format('woff2'),
+			url('layout/fonts/Golos-Text_Regular.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'GolosTextWebMedium';
+			src: url('layout/fonts/Golos-Text_Medium.woff2') format('woff2'),
+			url('layout/fonts/Golos-Text_Medium.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'GolosTextWebBold';
+			src: url('layout/fonts/Golos-Text_Bold.woff2') format('woff2'),
+			url('layout/fonts/Golos-Text_Bold.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Manrope-Medium';
+			src: url('layoutfonts/Manrope-Medium.eot');
+			src: url('../fonts/Manrope-Medium.eot?#iefix') format('embedded-opentype'),
+			url('layout/fonts/Manrope-Medium.svg#Manrope-Medium') format('svg'),
+			url('layout/fonts/Manrope-Medium.ttf') format('truetype'),
+			url('layout/fonts/Manrope-Medium.woff') format('woff'),
+			url('layout/fonts/Manrope-Medium.woff2') format('woff2');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'ALS Schlange sans Bold';
+			src: url('layout/fonts/ALSSchlangesans-Bold.eot');
+			src: local('ALS Schlange sans Bold'), local('ALSSchlangesans-Bold'),
+			url('layout/fonts/ALSSchlangesans-Bold.eot?#iefix') format('embedded-opentype'),
+			url('layout/fonts/ALSSchlangesans-Bold.woff2') format('woff2'),
+			url('layout/fonts/ALSSchlangesans-Bold.woff') format('woff'),
+			url('layout/fonts/ALSSchlangesans-Bold.ttf') format('truetype');
+			font-weight: bold;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'ALS Schlange sans Black';
+			src: url('layout/fonts/ALSSchlangesans-Black.eot');
+			src: local('ALS Schlange sans Black'), local('ALSSchlangesans-Black'),
+			url('layout/fonts/ALSSchlangesans-Black.eot?#iefix') format('embedded-opentype'),
+			url('layout/fonts/ALSSchlangesans-Black.woff2') format('woff2'),
+			url('layout/fonts/ALSSchlangesans-Black.woff') format('woff'),
+			url('layout/fonts/ALSSchlangesans-Black.ttf') format('truetype');
+			font-weight: 900;
+			font-style: normal;
+		}
+		body{
+			margin: 0;
+		}
+		main {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			flex-direction: column;
+			padding: 32px 0;
+			min-height: 100vh;
+		}
+		img{
+			max-width: 100%;
+		}
+		.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+			width: 100%;
+			padding-right: 12px;
+			padding-left: 12px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		@media (min-width: 576px){
+			.container, .container-sm {
+				max-width: 576px;
+			}
+		}
+		@media (min-width: 768px){
+			.container, .container-sm, .container-md {
+				max-width: 768px;
+			}
+		}
+		@media (min-width: 992px){
+			.container, .container-sm, .container-md, .container-lg {
+				max-width: 992px;
+			}
+		}
+		@media (min-width: 1200px){
+			.container, .container-sm, .container-md, .container-lg, .container-xl {
+				max-width: 1224px;
+			}
+		}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			margin-right: -12px;
+			margin-left: -12px;
+		}
+		.row > * {
+			flex-shrink: 0;
+			width: 100%;
+			max-width: 100%;
+			padding-right: 12px;
+			padding-left: 12px;
+		}
+		@media (min-width: 768px){
+			.col-md-5 {
+				flex: 0 0 auto;
+				width: 41.66667%;
+			}
+		}
+		@media (min-width: 768px){
+
+			.col-md-7 {
+				flex: 0 0 auto;
+				width: 58.33333%;
+			}
+		}
+		.align-items-center {
+			align-items: center !important;
+		}
+		.mb-3 {
+			margin-bottom: 16px !important;
+		}
+
+
+		.d-block {
+			display: block !important;
+		}
+		.mb-4 {
+			margin-bottom: 24px !important;
+		}
+		h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+			margin-top: 0;
+			margin-bottom: 0.5rem;
+			font-weight: 500;
+			line-height: 1.2;
+		}
+		body h1, body .h1, body .h1, body h2, body .h2, body .h2, body h3, body .h3, body .h3, body h4, body .h4, body .h4, body h5, body .h5, body .h5, body h6, body .h6, body .h6 {
+			font-family: "GolosTextWebBold";
+			color: #333333;
+			margin-bottom: 1rem;
+		}
+		body h3, body .h3, body .h3 {
+			font-size: 32px;
+		}
+
+		body h4, body .h4, body .h4 {
+			font-size: 24px;
+		}
+		@media (max-width: 767px){
+
+			body h3, body .h3, body .h3 {
+				font-size: 24px;
+			}
+			body h4, body .h4, body .h4 {
+				font-size: 20px;
+			}
+		}
+		.medium {
+			font-family: "GolosTextWebMedium";
+		}
+		.btn-wrap {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+		@media (max-width: 575px){
+			.btn-wrap .btn {
+				width: 100%;
+				margin-bottom: 16px !important;
+				margin-right: 0 !important;
+			}
+		}
+		/* 500 */
+		.error-section{
+			padding: 40px 0;
+		}
+		.btn {
+			display: inline-block;
+			font-family: "GolosTextWebMedium";
+			font-weight: 400;
+			line-height: 1.5;
+			color: #000;
+			text-align: center;
+			text-decoration: none;
+			vertical-align: middle;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			background-color: transparent;
+			border: 1px solid transparent;
+			padding: 11px 24px;
+			font-size: 1rem;
+			border-radius: 24px;
+			transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+		}
+		.btn-success {
+			color: #000;
+			background-color: #A6D363;
+			border-color: #A6D363;
+		}
+		.btn.btn-success:hover {
+			background: #6CA41A;
+			border-color: #6CA41A;
+		}
+		.btn {
+			font-size: 16px;
+		}
+		.btn.btn-success {
+			color: #fff;
+		}
+		*{
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+
+<main>
+	<section class="error-section">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-5 mb-3">
+					<h3 class="mb-4">Произошла ошибка</h3>
+					<h4 class="medium mb-4">На сервере произошла ошибка, <span class="d-block">но мы скоро ее исправим</span></h4>
+					<div class="btn-wrap"><a href="/" class="btn btn-success">На главную</a></div>
+				</div>
+				<div class="col-md-7">
+					<img src="/layout/img/img-500.jpg" alt="500">
+				</div>
+			</div>
+
+		</div>
+	</section>
+</main>
+</body>
+</html>
+
